@@ -1,0 +1,94 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* suggest a good background radial gradient color */
+    background: radial-gradient(circle, #ff105f, #ffad06);
+    height: 2400px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#downloadbar {
+    width: 300px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 100px;
+}
+
+#progress {
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 0%;
+    height: 100%;
+    background-color: #258028;
+    border-radius: 100px;
+}
+
+#center h3 {
+    color: #f0f0f0;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.text h3 {
+    color: #f0f0f0;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text textarea {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    resize: none;
+    outline-color: royalblue;
+}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: #000000;
+    margin: 0;
+}
+
+#increment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, blue);
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
